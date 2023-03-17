@@ -13,7 +13,7 @@
 <body>
 <!-- navbar================================================================> -->
 
-<nav class="navbar bg-body-light bg-dark">
+<nav class="navbar bg-body-dark bg-dark fixed-top">
     <div class="container-fluid">
         <div class="brand-search d-flex">
             <a href="#" class="navbar-brand">BigDigits</a>
@@ -28,18 +28,44 @@
             <button class="n-b btn ">Contact us</button>
         </div>
         <div class="mob-i d-flex">
-            <ion-icon name="search-outline" class="me-2  align-middle"></ion-icon>
-            <ion-icon name="chatbubble-outline" class="me-2 align-middle"></ion-icon>
-            <ion-icon name="person-add-outline" class="me-2 align-middle"></ion-icon>
-            <ion-icon name="mail-outline" class="me-2 align-middle"></ion-icon>
+            <ion-icon name="search-outline" class="me-3  align-middle"></ion-icon>
+            <ion-icon name="chatbubble-outline" class="me-3 align-middle"></ion-icon>
+            <ion-icon name="person-add-outline" class="me-3 align-middle"></ion-icon>
+            <ion-icon name="mail-outline" class="me-3 align-middle" onclick="myFuntion()"></ion-icon> 
             <ion-icon name="ellipsis-vertical-outline" class="me-0 align-middle"></ion-icon>
         </div>
     </div>
-  </nav>
+</nav>
 
-<!-- second nav=============================================================> -->
-  <nav class="second-nav navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
+    <div class="mail-form">
+        <form>
+            <h1>How can we help you</h1>
+            <p>please provide details regarding your questions</p>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Name*" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Contact no*" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email*">
+            </div>
+            <div class="input-group mb-3">
+                <textarea class="form-control" placeholder="Message*" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+    
+            <button class="btn btn-danger">Contact us</button>
+             
+            <h1>Call / Whatsapp</h1>
+            <span>P.Jeeva<br>+91 75488 99707<br>jeevujrapperdj@gmail.com</span>
+    
+        </form>
+    </div>    
+
+
+  <!-- second nav=============================================================> -->
+  <nav class="second-nav navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container-md">
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Choose Categore
@@ -63,6 +89,8 @@
     </div>
   </nav>
 
+
+
 <!-- Product cards==============================================================> -->
     <div class="container-fluid product-contain">
         <div class="row row-cols-2 row-cols-sm-3 row-cols-md-6">
@@ -72,7 +100,7 @@
                     <img src="images/1-Texvalley-logo-1.png" class="card-img" alt="Texvelly">
                     <div class="card-img-over">
                         <h6>Texvelly</h6>
-                        <span>12/06/2022</span><br>
+                        <span class="me-2">12/06/2022</span>
                         <ion-icon name="eye-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 2324 &nbsp;</span>
                         <ion-icon name="thumbs-up-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 30</span>
                     </div>
@@ -83,7 +111,7 @@
                         <img src="images/10-Nirmanika-1024x1024.png" class="card-img" alt="Texvelly">
                         <div class="card-img-over">
                             <h6>Nirmanika</h6>
-                            <span>12/06/2022</span><br>
+                            <span class="me-2">12/06/2022</span>
                             <ion-icon name="eye-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 2324 &nbsp;</span>
                             <ion-icon name="thumbs-up-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 30</span>
                         </div>
@@ -95,7 +123,7 @@
                         <img src="images/11-Meritt.jpg" class="card-img" alt="Texvelly">
                         <div class="card-img-over">
                             <h6>Meritt</h6>
-                            <span>12/06/2022</span><br>
+                            <span class="me-2">12/06/2022</span>
                             <ion-icon name="eye-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 2324 &nbsp;</span>
                             <ion-icon name="thumbs-up-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 30</span>
                         </div>
@@ -107,7 +135,7 @@
                         <img src="images/23-Yoga-Fabric-Logo.jpg" class="card-img" alt="Texvelly">
                         <div class="card-img-over">
                             <h6>Yoga Fabric</h6>
-                            <span>12/06/2022</span><br>
+                            <span class="me-2">12/06/2022</span>
                             <ion-icon name="eye-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 2324 &nbsp;</span>
                             <ion-icon name="thumbs-up-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 30</span>
                         </div>
@@ -119,7 +147,7 @@
                         <img src="images/13-Gillters-Stone-Client-Logo.jpg" class="card-img" alt="Texvelly">
                         <div class="card-img-over">
                             <h6>Gilliters</h6>
-                            <span>12/06/2022</span><br>
+                            <span class="me-2">12/06/2022</span>
                             <ion-icon name="eye-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 2324 &nbsp;</span>
                             <ion-icon name="thumbs-up-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 30</span>
                         </div>
@@ -133,7 +161,7 @@
                         <img src="images/12-Isha-Meadows-Logo-1-300x184.jpg" class="card-img" alt="Texvelly">
                         <div class="card-img-over">
                             <h6>Isha Medows</h6>
-                            <span>12/06/2022</span><br>
+                            <span class="me-2">12/06/2022</span>
                             <ion-icon name="eye-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 2324 &nbsp;</span>
                             <ion-icon name="thumbs-up-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 30</span>
                         </div>
@@ -144,7 +172,7 @@
                             <img src="images/4-Midtown-suites.jpg" class="card-img" alt="Texvelly">
                             <div class="card-img-over">
                                 <h6>Midtown</h6>
-                                <span>12/06/2022</span><br>
+                               <span class="me-2">12/06/2022</span>
                                 <ion-icon name="eye-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 2324 &nbsp;</span>
                                 <ion-icon name="thumbs-up-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 30</span>
                             </div>
@@ -156,7 +184,7 @@
                             <img src="images/14-VJ-logo-.png" class="card-img" alt="Texvelly">
                             <div class="card-img-over">
                                 <h6>VJ</h6>
-                                <span>12/06/2022</span><br>
+                                <span class="me-2">12/06/2022</span>
                                 <ion-icon name="eye-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 2324 &nbsp;</span>
                                 <ion-icon name="thumbs-up-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 30</span>
                             </div>
@@ -168,7 +196,7 @@
                             <img src="images/5-Foodspure.png" class="card-img" alt="Texvelly">
                             <div class="card-img-over">
                                 <h6>Foodspure</h6>
-                                <span>12/06/2022</span><br>
+                                <span class="me-2">12/06/2022</span>
                                 <ion-icon name="eye-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 2324 &nbsp;</span>
                                 <ion-icon name="thumbs-up-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 30</span>
                             </div>
@@ -182,7 +210,7 @@
                     <img src="images/15RRFWC.png" class="card-img" alt="Texvelly">
                     <div class="card-img-over">
                         <h6>RRFWC</h6>
-                        <span>12/06/2022</span><br>
+                        <span class="me-2">12/06/2022</span>
                         <ion-icon name="eye-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 2324 &nbsp;</span>
                         <ion-icon name="thumbs-up-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 30</span>
                     </div>
@@ -192,7 +220,7 @@
                         <img src="images/16-SKS-1024x1024.jpg" class="card-img" alt="Texvelly">
                         <div class="card-img-over">
                             <h6>SKS</h6>
-                            <span>12/06/2022</span><br>
+                            <span class="me-2">12/06/2022</span>
                             <ion-icon name="eye-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 2324 &nbsp;</span>
                             <ion-icon name="thumbs-up-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 30</span>
                         </div>
@@ -204,7 +232,7 @@
                         <img src="images/17-Ayangaran-Logo.jpg" class="card-img" alt="Texvelly">
                         <div class="card-img-over">
                             <h6>Ayangaran</h6>
-                            <span>12/06/2022</span><br>
+                            <span class="me-2">12/06/2022</span>
                             <ion-icon name="eye-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 2324 &nbsp;</span>
                             <ion-icon name="thumbs-up-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 30</span>
                         </div>
@@ -216,7 +244,7 @@
                         <img src="images/3-Linen-club-Logo.jpg" class="card-img" alt="Texvelly">
                         <div class="card-img-over">
                             <h6>Linen Club</h6>
-                            <span>12/06/2022</span><br>
+                            <span class="me-2">12/06/2022</span>
                             <ion-icon name="eye-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 2324 &nbsp;</span>
                             <ion-icon name="thumbs-up-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 30</span>
                         </div>
@@ -230,7 +258,7 @@
                         <img src="images/18-Winsoft-Logo.png" class="card-img" alt="Texvelly">
                         <div class="card-img-over">
                             <h6>Winsoft</h6>
-                            <span>12/06/2022</span><br>
+                            <span class="me-2">12/06/2022</span>
                             <ion-icon name="eye-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 2324 &nbsp;</span>
                             <ion-icon name="thumbs-up-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 30</span>
                         </div>
@@ -241,7 +269,7 @@
                             <img src="images/19-Skilled-interior-logo.jpg" class="card-img" alt="Texvelly">
                             <div class="card-img-over">
                                 <h6>Skilled interior</h6>
-                                <span>12/06/2022</span><br>
+                                <span class="me-2">12/06/2022</span>
                                 <ion-icon name="eye-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 2324 &nbsp;</span>
                                 <ion-icon name="thumbs-up-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 30</span>
                             </div>
@@ -253,7 +281,7 @@
                             <img src="images/6-Sravanagiri.jpg" class="card-img" alt="Texvelly">
                             <div class="card-img-over">
                                 <h6>Sravanagiri </h6>
-                                <span>12/06/2022</span><br>
+                                <span class="me-2">12/06/2022</span>
                                 <ion-icon name="eye-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 2324 &nbsp;</span>
                                 <ion-icon name="thumbs-up-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 30</span>
                             </div>
@@ -265,7 +293,7 @@
                             <img src="images/2-Mythiksha-Logo.jpg" class="card-img" alt="Texvelly">
                             <div class="card-img-over">
                                 <h6>Mythiksha</h6>
-                                <span>12/06/2022</span><br>
+                                <span class="me-2">12/06/2022</span>
                                 <ion-icon name="eye-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 2324 &nbsp;</span>
                                 <ion-icon name="thumbs-up-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 30</span>
                             </div>
@@ -278,7 +306,7 @@
                     <img src="images/20-RJ.png" class="card-img" alt="Texvelly">
                     <div class="card-img-over">
                         <h6>RJ</h6>
-                        <span>12/06/2022</span><br>
+                        <span class="me-2">12/06/2022</span>
                         <ion-icon name="eye-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 2324 &nbsp;</span>
                         <ion-icon name="thumbs-up-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 30</span>
                     </div>
@@ -289,7 +317,7 @@
                         <img src="images/21-Digital-sridhar-Logo.png" class="card-img" alt="Texvelly">
                         <div class="card-img-over">
                             <h6>Digitel sridher</h6>
-                            <span>12/06/2022</span><br>
+                            <span class="me-2">12/06/2022</span>
                             <ion-icon name="eye-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 2324 &nbsp;</span>
                             <ion-icon name="thumbs-up-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 30</span>
                         </div>
@@ -301,7 +329,7 @@
                         <img src="images/22-Eeraa.png" class="card-img" alt="Texvelly">
                         <div class="card-img-over">
                             <h6>Eeraa</h6>
-                            <span>12/06/2022</span><br>
+                            <span class="me-2">12/06/2022</span>
                             <ion-icon name="eye-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 2324 &nbsp;</span>
                             <ion-icon name="thumbs-up-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 30</span>
                         </div>
@@ -313,7 +341,7 @@
                             <img src="images/9-Dreamspaze-Logo.png" class="card-img" alt="Texvelly">
                             <div class="card-img-over">
                                 <h6>Dreamspaze</h6>
-                                <span>12/06/2022</span><br>
+                                <span class="me-2">12/06/2022</span>
                                 <ion-icon name="eye-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 2324 &nbsp;</span>
                                 <ion-icon name="thumbs-up-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 30</span>
                             </div>
@@ -325,7 +353,7 @@
                             <img src="images/8-Grotec-Agro-Logo.jpg" class="card-img" alt="Texvelly">
                             <div class="card-img-over">
                                 <h6>Grotec</h6>
-                                <span>12/06/2022</span><br>
+                                <span class="me-2">12/06/2022</span>
                                 <ion-icon name="eye-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 2324 &nbsp;</span>
                                 <ion-icon name="thumbs-up-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 30</span>
                             </div>
@@ -339,7 +367,7 @@
                             <img src="images/24-Weaves-150x150.jpg" class="card-img" alt="Texvelly">
                             <div class="card-img-over">
                                 <h6>Weaves</h6>
-                                <span>12/06/2022</span><br>
+                                <span class="me-2">12/06/2022</span>
                                 <ion-icon name="eye-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 2324 &nbsp;</span>
                                 <ion-icon name="thumbs-up-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 30</span>
                             </div>
@@ -350,7 +378,7 @@
                                 <img src="images/7-Vijay-Foundations-1536x1536.png" class="card-img" alt="Texvelly">
                                 <div class="card-img-over">
                                     <h6>Vijay Foundations</h6>
-                                    <span>12/06/2022</span><br>
+                                   <span class="me-2">12/06/2022</span>
                                     <ion-icon name="eye-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 2324 &nbsp;</span>
                                     <ion-icon name="thumbs-up-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 30</span>
                                 </div>
@@ -362,7 +390,7 @@
                             <img src="images/25-Thailand-NX.jpg" class="card-img" alt="Texvelly">
                             <div class="card-img-over">
                                 <h6>Thailand-NX</h6>
-                                <span>12/06/2022</span><br>
+                                <span class="me-2">12/06/2022</span>
                                 <ion-icon name="eye-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 2324 &nbsp;</span>
                                 <ion-icon name="thumbs-up-outline" class="h-i-2 align-middle"></ion-icon><span class="align-middle"> 30</span>
                             </div>
@@ -376,5 +404,10 @@
     <!-- ion-icon ------------------------------------------------------->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        function myFuntion(){
+            document.querySelector('.mail-form').style.display = "block";
+        }
+    </script>
 </body>
 </html>
