@@ -23,12 +23,67 @@
                   </form>
             </div>
         <div class="bt-n d-flex">
-            <ion-icon name="home-outline" class="mob-icon home me-4"></ion-icon>
-            <ion-icon name="search-outline" class="mob-icon align-middle me-4"></ion-icon>
+            <a href="#"><ion-icon name="home-outline" class="mob-icon home me-4"></ion-icon></a>
+            <div class="dropdown mobile-dropdown">
+                <ion-icon name="search-outline" class="mob-icon align-middle me-4" data-bs-toggle="dropdown" aria-expanded="false"></ion-icon>
+                <div class="dropdown-menu">
+                    <form class="d-flex" role="search">
+                    <input class="form-control me-0" type="search" placeholder=" &#128269; Search product" aria-label="Search" style="color:#000" autofocus>
+                    <button class="btn btn-light" type="submit">Search</button>
+                  </form>
+                </div>
+            </div>
+            
             <ion-icon name="chatbubble-outline" class="mob-icon align-middle me-4"></ion-icon>
+            <div class="dropdown mobile-dropdown">
+                <ion-icon name="person-add-outline" class="mob-icon align-middle me-4" data-bs-toggle="dropdown" aria-expanded="false"></ion-icon>
+                <div class="dropdown-menu news-form mail-form">
+                    <h4>Get our latest updates</h4>
+                    <p>Want to be informed about our new updates?</p>
+                    <p>Just subscribe to our newsletter!</p>
+                    <form id="subscribe-form" class="mt-2 mb-0" action="/subscribe" method="POST">
+                        <div class="input-group mb-3" required >
+                            <span class="input-group-text"><img src="https://regin.in/resources/images/fallows-email.png"></span>
+                            <input type="text" class="form-control" placeholder="Name*" aria-label="Username" aria-describedby="basic-addon1" autofocus>
+                            <button class="btn btn-danger">Contact us</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="dropdown mobile-dropdown">
+                 <ion-icon name="mail-outline" class="mob-icon align-middle me-4" data-bs-toggle="dropdown" aria-expanded="false"></ion-icon>
+                <form class="con-form mail-form dropdown-menu">
+                    <h4>How can we help you</h4>
+                    <p>please provide details regarding your questions</p>
+                <div class="input-group mb-3" required autofocus>
+                    <input type="text" class="form-control" placeholder="Name*" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Contact no*" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email*">
+                </div>
+                <div class="input-group mb-3">
+                    <textarea class="form-control" placeholder="Message*" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="input-group mb-3">
+                    <button class="btn btn-danger">Contact us</button>
+                </div>
+                <h5>Call / Whatsapp</h5>
+                <span>P.Jeeva<br>+91 75488 99707<br>jeevujrapperdj@gmail.com</span>
+            </form>
+            </div>
+            <div class="dropdown mobile-dropdown">
+                    <ion-icon name="ellipsis-vertical-outline" class="mob-icon align-middle" data-bs-toggle="dropdown" aria-expanded="false"></ion-icon>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+              </div>
             <div class="dropdown">
                 <button class="btn btn-primary me-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">Follow us</button>
-                <ion-icon name="person-add-outline" class="mob-icon align-middle me-4" data-bs-toggle="dropdown" aria-expanded="false"></ion-icon>
                 <div class="dropdown-menu news-form mail-form">
                     <h4>Get our latest updates</h4>
                     <p>Want to be informed about our new updates?</p>
@@ -44,7 +99,6 @@
             </div>
             <div class="dropdown">
                 <button class="btn btn-primary me-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">Contact us</button>
-                <ion-icon name="mail-outline" class="mob-icon align-middle me-4" data-bs-toggle="dropdown" aria-expanded="false"></ion-icon>
             <form class="con-form mail-form dropdown-menu">
                     <h4>How can we help you</h4>
                     <p>please provide details regarding your questions</p>
@@ -67,7 +121,6 @@
                 <span>P.Jeeva<br>+91 75488 99707<br>jeevujrapperdj@gmail.com</span>
             </form>
             </div>
-            <ion-icon name="ellipsis-vertical-outline" class="mob-icon align-middle"></ion-icon>
         </div>
     </div>    
     </nav>
